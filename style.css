@@ -7,7 +7,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     color: var(--purple);
-    background: #E5E5E5;
+    background: rgba(187, 153, 221, 0.08);
 }
 
 :root {
@@ -15,11 +15,11 @@ body {
     --purple: #BB99DD;
 }
 
+/* main div */
 .container {
     width: 500px;
     margin: 0 auto;
     text-align: center;
-    /* background: #E5E5E5; */
 }
 
 .profile-picture {
@@ -28,7 +28,7 @@ body {
     border: 2px solid #BB99DD;
     border-radius: 50%;
     padding: 5px;
-    margin-top: 207px;
+    margin-top: 100px;
 }
 
 .instagram {
@@ -36,19 +36,39 @@ body {
     text-decoration: none;
 }
 
+.instagram:hover {
+    font-weight: 600;
+    transition: .5s;
+}
+
 .links {
-    width: 326px;
+    width: 300px;
     height: 49px;
     border: 2px solid #BB99DD;
-    border-radius: 4px;
+    border-radius: 10px;
     margin: 0 auto;
     margin-top: 35px;
     margin-bottom: 16px;
 
-    font-weight: 600;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.links:hover {
+    background: rgba(187, 153, 221, .5);
+    transition: 0.5s;
+}
+
+.links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: var(--purple);
+}
+
+.links a:hover {
+    color: white;
+    transition: 0.5s;
 }
 
 .assets {
@@ -63,8 +83,33 @@ body {
     text-align: center;
 }
 
+footer {
+    text-align: center;
+    /* font-size: 12px; */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer a {
+    text-decoration: none;
+    color: #BB99DD;
+}
+
 @media (max-width: 600px) {
+    .container {
+        width: 340px;
+        margin: 0 auto;
+    }
     .profile-picture {
         margin-top: 100px;
+    }
+
+    .links {
+        width: 220px;
+    }
+
+    footer {
+        font-size: 12px;
     }
 }
