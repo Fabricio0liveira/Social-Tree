@@ -102,11 +102,16 @@ footer a {
         margin: 0 auto;
     }
     .profile-picture {
-        margin-top: 100px;
+        margin-top: 20px;
     }
 
     .links {
         width: 220px;
+        margin-top: 10px;
+    }
+
+    .assets {
+        margin-top: 15px;
     }
 
     footer {
